@@ -1,8 +1,4 @@
-// eng.js
-
-// Real-time updates on project changes
 function fetchProjectUpdates() {
-    // Simulated API call to fetch project updates
     return new Promise((resolve) => {
         setTimeout(() => {
             const updates = [
@@ -26,7 +22,6 @@ function displayProjectUpdates(updates) {
     });
 }
 
-// Drag-and-drop task assignment
 function enableTaskDragAndDrop() {
     const taskCards = document.querySelectorAll('.task-card');
     const taskLists = document.querySelectorAll('.task-list');
@@ -56,24 +51,19 @@ function enableTaskDragAndDrop() {
     function drop() {
         const card = document.querySelector('.dragging');
         this.appendChild(card);
-        // Simulated API call to update task status
         updateTaskStatus(card.dataset.taskId, this.id);
     }
 }
 
 function updateTaskStatus(taskId, status) {
-    // Simulated API call to update task status on the server
     console.log(`Task ${taskId} status updated to ${status}`);
 }
-
-// Real-time messaging
 function sendMessage(e) {
     e.preventDefault();
     const messageInput = document.getElementById('messageInput');
     const message = messageInput.value.trim();
 
     if (message !== '') {
-        // Simulated API call to send message
         postMessage(message)
             .then((response) => {
                 console.log('Message sent:', response);
@@ -87,7 +77,6 @@ function sendMessage(e) {
 }
 
 function postMessage(message) {
-    // Simulated API call to send message to the server
     return new Promise((resolve) => {
         setTimeout(() => {
             const response = {
@@ -121,13 +110,12 @@ function displayMessage(message) {
     messageList.appendChild(messageItem);
 }
 
-// Update profile information
+
 function updateProfile(e) {
     e.preventDefault();
     const form = e.target;
     const formData = new FormData(form);
 
-    // Simulated API call to update profile data
     putProfileData(formData)
         .then((response) => {
             console.log('Profile updated:', response);
@@ -139,7 +127,6 @@ function updateProfile(e) {
 }
 
 function putProfileData(formData) {
-    // Simulated API call to update profile data on the server
     return new Promise((resolve) => {
         setTimeout(() => {
             const response = {
@@ -150,9 +137,7 @@ function putProfileData(formData) {
     });
 }
 
-// Smooth scrolling for navigation links
 function init() {
-    // Fetch and display project updates
     fetchProjectUpdates()
         .then((updates) => {
             displayProjectUpdates(updates);
@@ -161,18 +146,14 @@ function init() {
             console.error('Error fetching project updates:', error);
         });
 
-    // Enable drag-and-drop task assignment
     enableTaskDragAndDrop();
 
-    // Handle message form submission
     const messageForm = document.getElementById('messageForm');
     messageForm.addEventListener('submit', sendMessage);
 
-    // Handle profile form submission
     const profileForm = document.getElementById('profileForm');
     profileForm.addEventListener('submit', updateProfile);
 
-    // Smooth scrolling for navigation links
     document.querySelectorAll('nav ul li a').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -187,5 +168,4 @@ function init() {
     });
 }
 
-// Call the initialization function when the DOM is loaded
 document.addEventListener('DOMContentLoaded', init);
