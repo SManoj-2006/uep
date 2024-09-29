@@ -8,8 +8,8 @@
     --transition-duration: 0.3s;
     --light-mode-bg: url('https://img.freepik.com/free-vector/line-background-wave-gradient-template-design_483537-5086.jpg?w=1380&t=st=1726985369~exp=1726985969~hmac=6a3970efcc7c54a9d6297afa627e9f77516b0cefaffbfbf2c484e54079028ec5');
     --dark-mode-bg: url('https://i.postimg.cc/gjbx8nf9/840843081452.jpg');
-    --light-subtext-color: #666; /* Light mode subtext color */
-    --dark-subtext-color: #ccc; /* Dark mode subtext color */
+    --light-subtext-color: #666; 
+    --dark-subtext-color: #ccc; 
 }
 
 * {
@@ -61,10 +61,10 @@ nav {
 }
 
 .logo img {
-    height: 50px; /* Adjust the height as needed */
+    height: 50px; 
     transition: transform 0.3s ease, opacity 0.3s ease;
-    margin: 0; /* Reset margin to avoid any unwanted spacing */
-    display: block; /* Ensure the image is displayed as a block element */
+    margin: 0; 
+    display: block; 
 }
 
 .logo img:hover {
@@ -177,7 +177,7 @@ nav {
 }
 
 .btn {
-    text-decoration: none; /* Remove underline */
+    text-decoration: none; 
     display: inline-block;
     padding: 10px 20px;
     font-size: 18px;
@@ -193,7 +193,7 @@ nav {
     background-color: #005fa3;
     transform: translateY(-5px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    text-decoration: none; /* Ensure underline is removed on hover as well */
+    text-decoration: none; 
 }
 
 section {
@@ -316,12 +316,12 @@ section {
 .cta .btn {
     background-color: #fff;
     color: var(--primary-color);
-    text-decoration: none; /* Remove underline */
+    text-decoration: none; 
 }
 
 .cta .btn:hover {
     background-color: var(--light-bg);
-    text-decoration: none; /* Ensure underline is removed on hover as well */
+    text-decoration: none; 
 }
 
 footer {
@@ -408,7 +408,7 @@ footer {
     background-color: #005fa3;
 }
 
-/* Keyframes for animations */
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -442,7 +442,6 @@ footer {
     }
 }
 
-/* Media queries */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -456,8 +455,6 @@ footer {
         flex-basis: 100%;
     }
 }
-
-/* Dark mode styles */
 body.dark-mode {
     background-color: var(--dark-bg);
     color: #fff;
@@ -506,7 +503,6 @@ body.dark-mode .section-header p {
     color: var(--dark-subtext-color);
 }
 
-/* Intro animation styles */
 .intro-logo {
     position: fixed;
     top: 50%;
@@ -527,8 +523,8 @@ body.dark-mode .section-header p {
     --transition-duration: 0.3s;
     --light-mode-bg: url('https://img.freepik.com/free-vector/line-background-wave-gradient-template-design_483537-5086.jpg?w=1380&t=st=1726985369~exp=1726985969~hmac=6a3970efcc7c54a9d6297afa627e9f77516b0cefaffbfbf2c484e54079028ec5');
     --dark-mode-bg: url('https://i.postimg.cc/gjbx8nf9/840843081452.jpg');
-    --light-subtext-color: #666; /* Light mode subtext color */
-    --dark-subtext-color: #ccc; /* Dark mode subtext color */
+    --light-subtext-color: #666; 
+    --dark-subtext-color: #ccc; 
 }
 
 * {
@@ -580,10 +576,10 @@ nav {
 }
 
 .logo img {
-    height: 50px; /* Adjust the height as needed */
+    height: 50px; 
     transition: transform 0.3s ease, opacity 0.3s ease;
-    margin: 0; /* Reset margin to avoid any unwanted spacing */
-    display: block; /* Ensure the image is displayed as a block element */
+    margin: 0;
+    display: block; 
 }
 
 .logo img:hover {
@@ -696,7 +692,7 @@ nav {
 }
 
 .btn {
-    text-decoration: none; /* Remove underline */
+    text-decoration: none; 
     display: inline-block;
     padding: 10px 20px;
     font-size: 18px;
@@ -712,7 +708,7 @@ nav {
     background-color: #005fa3;
     transform: translateY(-5px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    text-decoration: none; /* Ensure underline is removed on hover as well */
+    text-decoration: none; 
 }
 
 section {
@@ -835,12 +831,12 @@ section {
 .cta .btn {
     background-color: #fff;
     color: var(--primary-color);
-    text-decoration: none; /* Remove underline */
+    text-decoration: none; 
 }
 
 .cta .btn:hover {
     background-color: var(--light-bg);
-    text-decoration: none; /* Ensure underline is removed on hover as well */
+    text-decoration: none; 
 }
 
 footer {
@@ -927,7 +923,7 @@ footer {
     background-color: #005fa3;
 }
 
-/* Keyframes for animations */
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -961,7 +957,6 @@ footer {
     }
 }
 
-/* Media queries */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -976,7 +971,7 @@ footer {
     }
 }
 
-/* Dark mode styles */
+
 body.dark-mode {
     background-color: var(--dark-bg);
     color: #fff;
@@ -1025,7 +1020,6 @@ body.dark-mode .section-header p {
     color: var(--dark-subtext-color);
 }
 
-/* Intro animation styles */
 .intro-logo {
     position: fixed;
     top: 50%;
@@ -1046,8 +1040,8 @@ body.dark-mode .section-header p {
     --transition-duration: 0.3s;
     --light-mode-bg: url('https://img.freepik.com/free-vector/line-background-wave-gradient-template-design_483537-5086.jpg?w=1380&t=st=1726985369~exp=1726985969~hmac=6a3970efcc7c54a9d6297afa627e9f77516b0cefaffbfbf2c484e54079028ec5');
     --dark-mode-bg: url('https://i.postimg.cc/gjbx8nf9/840843081452.jpg');
-    --light-subtext-color: #666; /* Light mode subtext color */
-    --dark-subtext-color: #ccc; /* Dark mode subtext color */
+    --light-subtext-color: #666; 
+    --dark-subtext-color: #ccc; 
 }
 
 * {
@@ -1099,10 +1093,10 @@ nav {
 }
 
 .logo img {
-    height: 50px; /* Adjust the height as needed */
+    height: 50px; 
     transition: transform 0.3s ease, opacity 0.3s ease;
-    margin: 0; /* Reset margin to avoid any unwanted spacing */
-    display: block; /* Ensure the image is displayed as a block element */
+    margin: 0;
+    display: block;
 }
 
 .logo img:hover {
@@ -1215,7 +1209,7 @@ nav {
 }
 
 .btn {
-    text-decoration: none; /* Remove underline */
+    text-decoration: none;
     display: inline-block;
     padding: 10px 20px;
     font-size: 18px;
@@ -1231,7 +1225,7 @@ nav {
     background-color: #005fa3;
     transform: translateY(-5px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    text-decoration: none; /* Ensure underline is removed on hover as well */
+    text-decoration: none;
 }
 
 section {
@@ -1354,12 +1348,12 @@ section {
 .cta .btn {
     background-color: #fff;
     color: var(--primary-color);
-    text-decoration: none; /* Remove underline */
+    text-decoration: none; 
 }
 
 .cta .btn:hover {
     background-color: var(--light-bg);
-    text-decoration: none; /* Ensure underline is removed on hover as well */
+    text-decoration: none;
 }
 
 footer {
@@ -1446,7 +1440,6 @@ footer {
     background-color: #005fa3;
 }
 
-/* Keyframes for animations */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -1480,7 +1473,6 @@ footer {
     }
 }
 
-/* Media queries */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -1495,7 +1487,7 @@ footer {
     }
 }
 
-/* Dark mode styles */
+
 body.dark-mode {
     background-color: var(--dark-bg);
     color: #fff;
@@ -1544,7 +1536,6 @@ body.dark-mode .section-header p {
     color: var(--dark-subtext-color);
 }
 
-/* Intro animation styles */
 .intro-logo {
     position: fixed;
     top: 50%;
@@ -1565,8 +1556,8 @@ body.dark-mode .section-header p {
     --transition-duration: 0.3s;
     --light-mode-bg: url('https://img.freepik.com/free-vector/line-background-wave-gradient-template-design_483537-5086.jpg?w=1380&t=st=1726985369~exp=1726985969~hmac=6a3970efcc7c54a9d6297afa627e9f77516b0cefaffbfbf2c484e54079028ec5');
     --dark-mode-bg: url('https://i.postimg.cc/gjbx8nf9/840843081452.jpg');
-    --light-subtext-color: #666; /* Light mode subtext color */
-    --dark-subtext-color: #ccc; /* Dark mode subtext color */
+    --light-subtext-color: #666; 
+    --dark-subtext-color: #ccc;
 }
 
 * {
@@ -1618,10 +1609,10 @@ nav {
 }
 
 .logo img {
-    height: 50px; /* Adjust the height as needed */
+    height: 50px; 
     transition: transform 0.3s ease, opacity 0.3s ease;
-    margin: 0; /* Reset margin to avoid any unwanted spacing */
-    display: block; /* Ensure the image is displayed as a block element */
+    margin: 0;
+    display: block;
 }
 
 .logo img:hover {
@@ -1734,7 +1725,7 @@ nav {
 }
 
 .btn {
-    text-decoration: none; /* Remove underline */
+    text-decoration: none; 
     display: inline-block;
     padding: 10px 20px;
     font-size: 18px;
@@ -1750,7 +1741,7 @@ nav {
     background-color: #005fa3;
     transform: translateY(-5px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    text-decoration: none; /* Ensure underline is removed on hover as well */
+    text-decoration: none; 
 }
 
 section {
@@ -1873,12 +1864,12 @@ section {
 .cta .btn {
     background-color: #fff;
     color: var(--primary-color);
-    text-decoration: none; /* Remove underline */
+    text-decoration: none; 
 }
 
 .cta .btn:hover {
     background-color: var(--light-bg);
-    text-decoration: none; /* Ensure underline is removed on hover as well */
+    text-decoration: none; 
 }
 
 footer {
@@ -1965,7 +1956,7 @@ footer {
     background-color: #005fa3;
 }
 
-/* Keyframes for animations */
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -1999,7 +1990,6 @@ footer {
     }
 }
 
-/* Media queries */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -2014,7 +2004,7 @@ footer {
     }
 }
 
-/* Dark mode styles */
+
 body.dark-mode {
     background-color: var(--dark-bg);
     color: #fff;
@@ -2063,7 +2053,6 @@ body.dark-mode .section-header p {
     color: var(--dark-subtext-color);
 }
 
-/* Intro animation styles */
 .intro-logo {
     position: fixed;
     top: 50%;
@@ -2084,8 +2073,8 @@ body.dark-mode .section-header p {
     --transition-duration: 0.3s;
     --light-mode-bg: url('https://img.freepik.com/free-vector/line-background-wave-gradient-template-design_483537-5086.jpg?w=1380&t=st=1726985369~exp=1726985969~hmac=6a3970efcc7c54a9d6297afa627e9f77516b0cefaffbfbf2c484e54079028ec5');
     --dark-mode-bg: url('https://i.postimg.cc/gjbx8nf9/840843081452.jpg');
-    --light-subtext-color: #666; /* Light mode subtext color */
-    --dark-subtext-color: #ccc; /* Dark mode subtext color */
+    --light-subtext-color: #666; 
+    --dark-subtext-color: #ccc; 
 }
 
 * {
@@ -2137,10 +2126,10 @@ nav {
 }
 
 .logo img {
-    height: 50px; /* Adjust the height as needed */
+    height: 50px;
     transition: transform 0.3s ease, opacity 0.3s ease;
-    margin: 0; /* Reset margin to avoid any unwanted spacing */
-    display: block; /* Ensure the image is displayed as a block element */
+    margin: 0; 
+    display: block; 
 }
 
 .logo img:hover {
@@ -2253,7 +2242,7 @@ nav {
 }
 
 .btn {
-    text-decoration: none; /* Remove underline */
+    text-decoration: none; 
     display: inline-block;
     padding: 10px 20px;
     font-size: 18px;
@@ -2269,7 +2258,7 @@ nav {
     background-color: #005fa3;
     transform: translateY(-5px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    text-decoration: none; /* Ensure underline is removed on hover as well */
+    text-decoration: none;
 }
 
 section {
@@ -2392,12 +2381,12 @@ section {
 .cta .btn {
     background-color: #fff;
     color: var(--primary-color);
-    text-decoration: none; /* Remove underline */
+    text-decoration: none;
 }
 
 .cta .btn:hover {
     background-color: var(--light-bg);
-    text-decoration: none; /* Ensure underline is removed on hover as well */
+    text-decoration: none; 
 }
 
 footer {
@@ -2484,7 +2473,7 @@ footer {
     background-color: #005fa3;
 }
 
-/* Keyframes for animations */
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -2518,7 +2507,7 @@ footer {
     }
 }
 
-/* Media queries */
+
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -2533,7 +2522,6 @@ footer {
     }
 }
 
-/* Dark mode styles */
 body.dark-mode {
     background-color: var(--dark-bg);
     color: #fff;
@@ -2582,7 +2570,7 @@ body.dark-mode .section-header p {
     color: var(--dark-subtext-color);
 }
 
-/* Intro animation styles */
+
 .intro-logo {
     position: fixed;
     top: 50%;
@@ -2603,8 +2591,8 @@ body.dark-mode .section-header p {
     --transition-duration: 0.3s;
     --light-mode-bg: url('https://img.freepik.com/free-vector/line-background-wave-gradient-template-design_483537-5086.jpg?w=1380&t=st=1726985369~exp=1726985969~hmac=6a3970efcc7c54a9d6297afa627e9f77516b0cefaffbfbf2c484e54079028ec5');
     --dark-mode-bg: url('https://i.postimg.cc/gjbx8nf9/840843081452.jpg');
-    --light-subtext-color: #666; /* Light mode subtext color */
-    --dark-subtext-color: #ccc; /* Dark mode subtext color */
+    --light-subtext-color: #666; 
+    --dark-subtext-color: #ccc; 
 }
 
 * {
@@ -2655,10 +2643,10 @@ nav {
 }
 
 .logo img {
-    height: 50px; /* Adjust the height as needed */
+    height: 50px; 
     transition: transform 0.3s ease, opacity 0.3s ease;
-    margin: 0; /* Reset margin to avoid any unwanted spacing */
-    display: block; /* Ensure the image is displayed as a block element */
+    margin: 0;
+    display: block; 
 }
 
 .logo img:hover {
@@ -2771,7 +2759,7 @@ nav {
 }
 
 .btn {
-    text-decoration: none; /* Remove underline */
+    text-decoration: none;
     display: inline-block;
     padding: 10px 20px;
     font-size: 18px;
@@ -2787,7 +2775,7 @@ nav {
     background-color: #005fa3;
     transform: translateY(-5px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    text-decoration: none; /* Ensure underline is removed on hover as well */
+    text-decoration: none;
 }
 
 section {
@@ -2910,12 +2898,12 @@ section {
 .cta .btn {
     background-color: #fff;
     color: var(--primary-color);
-    text-decoration: none; /* Remove underline */
+    text-decoration: none; 
 }
 
 .cta .btn:hover {
     background-color: var(--light-bg);
-    text-decoration: none; /* Ensure underline is removed on hover as well */
+    text-decoration: none; 
 }
 
 footer {
@@ -3051,7 +3039,6 @@ footer {
     }
 }
 
-/* Dark mode styles */
 body.dark-mode {
     background-color: var(--dark-bg);
     color: #fff;
@@ -3122,8 +3109,8 @@ body.dark-mode .section-header p {
     --transition-duration: 0.3s;
     --light-mode-bg: url('https://img.freepik.com/free-vector/line-background-wave-gradient-template-design_483537-5086.jpg?w=1380&t=st=1726985369~exp=1726985969~hmac=6a3970efcc7c54a9d6297afa627e9f77516b0cefaffbfbf2c484e54079028ec5');
     --dark-mode-bg: url('https://i.postimg.cc/gjbx8nf9/840843081452.jpg');
-    --light-subtext-color: #666; /* Light mode subtext color */
-    --dark-subtext-color: #ccc; /* Dark mode subtext color */
+    --light-subtext-color: #666;
+    --dark-subtext-color: #ccc; 
 }
 
 * {
@@ -3174,10 +3161,10 @@ nav {
 }
 
 .logo img {
-    height: 50px; /* Adjust the height as needed */
+    height: 50px; 
     transition: transform 0.3s ease, opacity 0.3s ease;
-    margin: 0; /* Reset margin to avoid any unwanted spacing */
-    display: block; /* Ensure the image is displayed as a block element */
+    margin: 0;
+    display: block;
 }
 
 .logo img:hover {
@@ -3290,7 +3277,7 @@ nav {
 }
 
 .btn {
-    text-decoration: none; /* Remove underline */
+    text-decoration: none;
     display: inline-block;
     padding: 10px 20px;
     font-size: 18px;
@@ -3306,7 +3293,7 @@ nav {
     background-color: #005fa3;
     transform: translateY(-5px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    text-decoration: none; /* Ensure underline is removed on hover as well */
+    text-decoration: none; 
 }
 
 section {
@@ -3429,12 +3416,12 @@ section {
 .cta .btn {
     background-color: #fff;
     color: var(--primary-color);
-    text-decoration: none; /* Remove underline */
+    text-decoration: none;
 }
 
 .cta .btn:hover {
     background-color: var(--light-bg);
-    text-decoration: none; /* Ensure underline is removed on hover as well */
+    text-decoration: none;
 }
 
 footer {
@@ -3521,7 +3508,7 @@ footer {
     background-color: #005fa3;
 }
 
-/* Keyframes for animations */
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -3555,7 +3542,7 @@ footer {
     }
 }
 
-/* Media queries */
+
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -3570,7 +3557,6 @@ footer {
     }
 }
 
-/* Dark mode styles */
 body.dark-mode {
     background-color: var(--dark-bg);
     color: #fff;
@@ -3619,7 +3605,7 @@ body.dark-mode .section-header p {
     color: var(--dark-subtext-color);
 }
 
-/* Intro animation styles */
+
 .intro-logo {
     position: fixed;
     top: 50%;
@@ -3641,8 +3627,8 @@ body.dark-mode .section-header p {
     --transition-duration: 0.3s;
     --light-mode-bg: url('https://img.freepik.com/free-vector/line-background-wave-gradient-template-design_483537-5086.jpg?w=1380&t=st=1726985369~exp=1726985969~hmac=6a3970efcc7c54a9d6297afa627e9f77516b0cefaffbfbf2c484e54079028ec5');
     --dark-mode-bg: url('https://i.postimg.cc/gjbx8nf9/840843081452.jpg');
-    --light-subtext-color: #666; /* Light mode subtext color */
-    --dark-subtext-color: #ccc; /* Dark mode subtext color */
+    --light-subtext-color: #666; 
+    --dark-subtext-color: #ccc;
 }
 
 * {
@@ -3693,10 +3679,10 @@ nav {
 }
 
 .logo img {
-    height: 50px; /* Adjust the height as needed */
+    height: 50px; 
     transition: transform 0.3s ease, opacity 0.3s ease;
-    margin: 0; /* Reset margin to avoid any unwanted spacing */
-    display: block; /* Ensure the image is displayed as a block element */
+    margin: 0; 
+    display: block; 
 }
 
 .logo img:hover {
@@ -3809,7 +3795,7 @@ nav {
 }
 
 .btn {
-    text-decoration: none; /* Remove underline */
+    text-decoration: none; 
     display: inline-block;
     padding: 10px 20px;
     font-size: 18px;
@@ -3825,8 +3811,7 @@ nav {
     background-color: #005fa3;
     transform: translateY(-5px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    text-decoration: none; /* Ensure underline is removed on hover as well */
-}
+    text-decoration: none; 
 
 section {
     padding: 80px 0;
@@ -3948,13 +3933,12 @@ section {
 .cta .btn {
     background-color: #fff;
     color: var(--primary-color);
-    text-decoration: none; /* Remove underline */
+    text-decoration: none;
 }
 
 .cta .btn:hover {
     background-color: var(--light-bg);
-    text-decoration: none; /* Ensure underline is removed on hover as well */
-}
+    text-decoration: none;
 
 footer {
     background-color: var(--dark-bg);
@@ -4040,7 +4024,7 @@ footer {
     background-color: #005fa3;
 }
 
-/* Keyframes for animations */
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -4074,7 +4058,7 @@ footer {
     }
 }
 
-/* Media queries */
+
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -4089,7 +4073,7 @@ footer {
     }
 }
 
-/* Dark mode styles */
+
 body.dark-mode {
     background-color: var(--dark-bg);
     color: #fff;
@@ -4137,7 +4121,6 @@ body.dark-mode .section-header p {
     color: var(--dark-subtext-color);
 }
 
-/* Intro animation styles */
 .intro-logo {
     position: fixed;
     top: 50%;
@@ -4166,8 +4149,8 @@ body.dark-mode .section-header p {
     --transition-duration: 0.3s;
     --light-mode-bg: url('https://img.freepik.com/free-vector/line-background-wave-gradient-template-design_483537-5086.jpg?w=1380&t=st=1726985369~exp=1726985969~hmac=6a3970efcc7c54a9d6297afa627e9f77516b0cefaffbfbf2c484e54079028ec5');
     --dark-mode-bg: url('https://i.postimg.cc/gjbx8nf9/840843081452.jpg');
-    --light-subtext-color: #666; /* Light mode subtext color */
-    --dark-subtext-color: #ccc; /* Dark mode subtext color */
+    --light-subtext-color: #666; 
+    --dark-subtext-color: #ccc;
 }
 
 * {
@@ -4218,10 +4201,10 @@ nav {
 }
 
 .logo img {
-    height: 50px; /* Adjust the height as needed */
+    height: 50px; 
     transition: transform 0.3s ease, opacity 0.3s ease;
-    margin: 0; /* Reset margin to avoid any unwanted spacing */
-    display: block; /* Ensure the image is displayed as a block element */
+    margin: 0; 
+    display: block; 
 }
 
 .logo img:hover {
@@ -4334,7 +4317,7 @@ nav {
 }
 
 .btn {
-    text-decoration: none; /* Remove underline */
+    text-decoration: none;
     display: inline-block;
     padding: 10px 20px;
     font-size: 18px;
@@ -4350,7 +4333,7 @@ nav {
     background-color: #005fa3;
     transform: translateY(-5px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    text-decoration: none; /* Ensure underline is removed on hover as well */
+    text-decoration: none; 
 }
 
 section {
@@ -4473,12 +4456,12 @@ section {
 .cta .btn {
     background-color: #fff;
     color: var(--primary-color);
-    text-decoration: none; /* Remove underline */
+    text-decoration: none; 
 }
 
 .cta .btn:hover {
     background-color: var(--light-bg);
-    text-decoration: none; /* Ensure underline is removed on hover as well */
+    text-decoration: none; 
 }
 
 footer {
@@ -4565,7 +4548,6 @@ footer {
     background-color: #005fa3;
 }
 
-/* Keyframes for animations */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -4598,8 +4580,6 @@ footer {
         transform: scale(1);
     }
 }
-
-/* Media queries */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -4614,7 +4594,6 @@ footer {
     }
 }
 
-/* Dark mode styles */
 body.dark-mode {
     background-color: var(--dark-bg);
     color: #fff;
@@ -4662,7 +4641,6 @@ body.dark-mode .section-header p {
     color: var(--dark-subtext-color);
 }
 
-/* Intro animation styles */
 .intro-logo {
     position: fixed;
     top: 50%;
@@ -4687,8 +4665,8 @@ body.dark-mode .section-header p {
     --transition-duration: 0.3s;
     --light-mode-bg: url('https://img.freepik.com/free-vector/line-background-wave-gradient-template-design_483537-5086.jpg?w=1380&t=st=1726985369~exp=1726985969~hmac=6a3970efcc7c54a9d6297afa627e9f77516b0cefaffbfbf2c484e54079028ec5');
     --dark-mode-bg: url('https://i.postimg.cc/gjbx8nf9/840843081452.jpg');
-    --light-subtext-color: #666; /* Light mode subtext color */
-    --dark-subtext-color: #ccc; /* Dark mode subtext color */
+    --light-subtext-color: #666; 
+    --dark-subtext-color: #ccc;
 }
 
 * {
@@ -4739,10 +4717,10 @@ nav {
 }
 
 .logo img {
-    height: 50px; /* Adjust the height as needed */
+    height: 50px;
     transition: transform 0.3s ease, opacity 0.3s ease;
-    margin: 0; /* Reset margin to avoid any unwanted spacing */
-    display: block; /* Ensure the image is displayed as a block element */
+    margin: 0; 
+    display: block;
 }
 
 .logo img:hover {
@@ -4855,7 +4833,7 @@ nav {
 }
 
 .btn {
-    text-decoration: none; /* Remove underline */
+    text-decoration: none; 
     display: inline-block;
     padding: 10px 20px;
     font-size: 18px;
@@ -4871,7 +4849,7 @@ nav {
     background-color: #005fa3;
     transform: translateY(-5px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    text-decoration: none; /* Ensure underline is removed on hover as well */
+    text-decoration: none;
 }
 
 section {
@@ -4994,13 +4972,12 @@ section {
 .cta .btn {
     background-color: #fff;
     color: var(--primary-color);
-    text-decoration: none; /* Remove underline */
+    text-decoration: none; 
 }
 
 .cta .btn:hover {
     background-color: var(--light-bg);
-    text-decoration: none; /* Ensure underline is removed on hover as well */
-}
+    text-decoration: none; 
 
 footer {
     background-color: var(--dark-bg);
@@ -5086,7 +5063,6 @@ footer {
     background-color: #005fa3;
 }
 
-/* Keyframes for animations */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -5120,7 +5096,6 @@ footer {
     }
 }
 
-/* Media queries */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -5135,7 +5110,6 @@ footer {
     }
 }
 
-/* Dark mode styles */
 body.dark-mode {
     background-color: var(--dark-bg);
     color: #fff;
@@ -5183,7 +5157,6 @@ body.dark-mode .section-header p {
     color: var(--dark-subtext-color);
 }
 
-/* Intro animation styles */
 .intro-logo {
     position: fixed;
     top: 50%;
@@ -5208,8 +5181,8 @@ body.dark-mode .section-header p {
     --transition-duration: 0.3s;
     --light-mode-bg: url('https://img.freepik.com/free-vector/line-background-wave-gradient-template-design_483537-5086.jpg?w=1380&t=st=1726985369~exp=1726985969~hmac=6a3970efcc7c54a9d6297afa627e9f77516b0cefaffbfbf2c484e54079028ec5');
     --dark-mode-bg: url('https://i.postimg.cc/gjbx8nf9/840843081452.jpg');
-    --light-subtext-color: #666; /* Light mode subtext color */
-    --dark-subtext-color: #ccc; /* Dark mode subtext color */
+    --light-subtext-color: #666; 
+    --dark-subtext-color: #ccc; 
 }
 
 * {
@@ -5260,10 +5233,10 @@ nav {
 }
 
 .logo img {
-    height: 50px; /* Adjust the height as needed */
+    height: 50px;
     transition: transform 0.3s ease, opacity 0.3s ease;
-    margin: 0; /* Reset margin to avoid any unwanted spacing */
-    display: block; /* Ensure the image is displayed as a block element */
+    margin: 0;
+    display: block;
 }
 
 .logo img:hover {
@@ -5376,7 +5349,7 @@ nav {
 }
 
 .btn {
-    text-decoration: none; /* Remove underline */
+    text-decoration: none; 
     display: inline-block;
     padding: 10px 20px;
     font-size: 18px;
@@ -5392,7 +5365,7 @@ nav {
     background-color: #005fa3;
     transform: translateY(-5px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    text-decoration: none; /* Ensure underline is removed on hover as well */
+    text-decoration: none; 
 }
 
 section {
@@ -5515,12 +5488,12 @@ section {
 .cta .btn {
     background-color: #fff;
     color: var(--primary-color);
-    text-decoration: none; /* Remove underline */
+    text-decoration: none;
 }
 
 .cta .btn:hover {
     background-color: var(--light-bg);
-    text-decoration: none; /* Ensure underline is removed on hover as well */
+    text-decoration: none; 
 }
 
 footer {
@@ -5607,7 +5580,6 @@ footer {
     background-color: #005fa3;
 }
 
-/* Keyframes for animations */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -5641,7 +5613,6 @@ footer {
     }
 }
 
-/* Media queries */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -5656,7 +5627,6 @@ footer {
     }
 }
 
-/* Dark mode styles */
 body.dark-mode {
     background-color: var(--dark-bg);
     color: #fff;
@@ -5704,7 +5674,6 @@ body.dark-mode .section-header p {
     color: var(--dark-subtext-color);
 }
 
-/* Intro animation styles */
 .intro-logo {
     position: fixed;
     top: 50%;
@@ -5733,8 +5702,8 @@ body.dark-mode .section-header p {
     --transition-duration: 0.3s;
     --light-mode-bg: url('https://img.freepik.com/free-vector/line-background-wave-gradient-template-design_483537-5086.jpg?w=1380&t=st=1726985369~exp=1726985969~hmac=6a3970efcc7c54a9d6297afa627e9f77516b0cefaffbfbf2c484e54079028ec5');
     --dark-mode-bg: url('https://i.postimg.cc/gjbx8nf9/840843081452.jpg');
-    --light-subtext-color: #666; /* Light mode subtext color */
-    --dark-subtext-color: #ccc; /* Dark mode subtext color */
+    --light-subtext-color: #666;
+    --dark-subtext-color: #ccc; 
 }
 
 * {
@@ -5785,10 +5754,10 @@ nav {
 }
 
 .logo img {
-    height: 50px; /* Adjust the height as needed */
+    height: 50px; 
     transition: transform 0.3s ease, opacity 0.3s ease;
-    margin: 0; /* Reset margin to avoid any unwanted spacing */
-    display: block; /* Ensure the image is displayed as a block element */
+    margin: 0; 
+    display: block; 
 }
 
 .logo img:hover {
@@ -5901,7 +5870,7 @@ nav {
 }
 
 .btn {
-    text-decoration: none; /* Remove underline */
+    text-decoration: none;
     display: inline-block;
     padding: 10px 20px;
     font-size: 18px;
@@ -5917,7 +5886,7 @@ nav {
     background-color: #005fa3;
     transform: translateY(-5px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    text-decoration: none; /* Ensure underline is removed on hover as well */
+    text-decoration: none; 
 }
 
 section {
@@ -6040,12 +6009,12 @@ section {
 .cta .btn {
     background-color: #fff;
     color: var(--primary-color);
-    text-decoration: none; /* Remove underline */
+    text-decoration: none; 
 }
 
 .cta .btn:hover {
     background-color: var(--light-bg);
-    text-decoration: none; /* Ensure underline is removed on hover as well */
+    text-decoration: none;
 }
 
 footer {
@@ -6132,7 +6101,7 @@ footer {
     background-color: #005fa3;
 }
 
-/* Keyframes for animations */
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -6166,7 +6135,6 @@ footer {
     }
 }
 
-/* Media queries */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -6181,7 +6149,6 @@ footer {
     }
 }
 
-/* Dark mode styles */
 body.dark-mode {
     background-color: var(--dark-bg);
     color: #fff;
@@ -6229,7 +6196,6 @@ body.dark-mode .section-header p {
     color: var(--dark-subtext-color);
 }
 
-/* Intro animation styles */
 .intro-logo {
     position: fixed;
     top: 50%;
@@ -6258,8 +6224,8 @@ body.dark-mode .section-header p {
     --transition-duration: 0.3s;
     --light-mode-bg: url('https://img.freepik.com/free-vector/line-background-wave-gradient-template-design_483537-5086.jpg?w=1380&t=st=1726985369~exp=1726985969~hmac=6a3970efcc7c54a9d6297afa627e9f77516b0cefaffbfbf2c484e54079028ec5');
     --dark-mode-bg: url('https://i.postimg.cc/gjbx8nf9/840843081452.jpg');
-    --light-subtext-color: #666; /* Light mode subtext color */
-    --dark-subtext-color: #ccc; /* Dark mode subtext color */
+    --light-subtext-color: #666; 
+    --dark-subtext-color: #ccc;
 }
 
 * {
@@ -6310,7 +6276,7 @@ nav {
 }
 
 .logo img {
-    height: 50px; /* Adjust the height as needed */
+    height: 50px; 
     transition: transform 0.3s ease, opacity 0.3s ease;
     margin: 0; /* Reset margin to avoid any unwanted spacing */
     display: block; /* Ensure the image is displayed as a block element */
