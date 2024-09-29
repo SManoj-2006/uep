@@ -77,28 +77,23 @@
     
 
     <script>
-    // Toggle the burger menu
     document.addEventListener("DOMContentLoaded", () => {
         const burger = document.querySelector(".burger");
         const navOptions = document.querySelector(".nav-opt ul");
-
-        // Toggle the active class on click
         burger.addEventListener("click", () => {
             navOptions.classList.toggle("active");
         });
-
-        // Handle Client Form Submission
         const clientForm = document.getElementById('client-form');
         clientForm.addEventListener('submit', (e) => {
-            e.preventDefault(); // Prevent form from submitting
-            window.location.href = 'page.html'; // Redirect to page.html
+            e.preventDefault(); 
+            window.location.href = 'page.html';
         });
 
-        // Handle Engineer Form Submission
+
         const engineerForm = document.getElementById('engineer-form');
         engineerForm.addEventListener('submit', (e) => {
-            e.preventDefault(); // Prevent form from submitting
-            window.location.href = 'eng.html'; // Redirect to eng.html
+            e.preventDefault(); 
+            window.location.href = 'eng.html'; 
         });
     });
     </script>
