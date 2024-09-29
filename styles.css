@@ -14,13 +14,13 @@
 
   --transition-duration: 0.3s;
 
-  --light-mode-bg:url('https://i.postimg.cc/65yfNxxp/duplo27.jpg');
+  --light-mode-bg:url('images/duplo27.jpg');
 
   --dark-mode-bg: url('https://i.postimg.cc/gjbx8nf9/840843081452.jpg');
 
-  --light-subtext-color: #666; 
+  --light-subtext-color: #666; /* Light mode subtext color */
 
-  --dark-subtext-color: #ccc;
+  --dark-subtext-color: #ccc; /* Dark mode subtext color */
 
 }
 
@@ -110,13 +110,13 @@ nav {
 
 .logo img {
 
-  height: 50px; 
+  height: 50px; /* Adjust the height as needed */
 
   transition: transform 0.3s ease, opacity 0.3s ease;
 
-  margin: 0;
+  margin: 0; /* Reset margin to avoid any unwanted spacing */
 
-  display: block;
+  display: block; /* Ensure the image is displayed as a block element */
 
 }
 
@@ -358,7 +358,7 @@ span{
 
 .btn {
 
-  text-decoration: none;
+  text-decoration: none; /* Remove underline */
 
   display: inline-block;
 
@@ -388,7 +388,7 @@ span{
 
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 
-  text-decoration: none; 
+  text-decoration: none; /* Ensure underline is removed on hover as well */
 
 }
 
@@ -594,7 +594,7 @@ section {
 
   color: var(--primary-color);
 
-  text-decoration: none;
+  text-decoration: none; /* Remove underline */
 
 }
 
@@ -602,7 +602,7 @@ section {
 
   background-color: var(--light-bg);
 
-  text-decoration: none; 
+  text-decoration: none; /* Ensure underline is removed on hover as well */
 
 }
 
@@ -748,6 +748,7 @@ footer {
 
 }
 
+/* Keyframes for animations */
 
 @keyframes fadeInUp {
 
@@ -809,6 +810,7 @@ footer {
 
 }
 
+/* Media queries */
 
 @media (max-width: 768px) {
 
@@ -832,6 +834,7 @@ footer {
 
 }
 
+/* Dark mode styles */
 
 body.dark-mode {
 
@@ -907,6 +910,7 @@ body.dark-mode .section-header p {
 
 }
 
+/* Intro animation styles */
 
 .intro-logo {
 
