@@ -1,6 +1,4 @@
-// page.js
 
-// DOM Elements
 const postProjectBtn = document.querySelector('.post-project-btn');
 const projectFormSection = document.getElementById('project-form-section');
 const projectForm = document.getElementById('project-form');
@@ -19,10 +17,8 @@ const fileUpload = document.getElementById('file-upload');
 const fileInput = document.getElementById('additional-files');
 const proceedTeamBtn = document.querySelector('.proceed-team-btn');
 
-// Event Listeners
 postProjectBtn.addEventListener('click', () => {
     projectFormSection.classList.toggle('hidden');
-    // Scroll to the form
     if (!projectFormSection.classList.contains('hidden')) {
         projectFormSection.scrollIntoView({ behavior: 'smooth' });
     }
@@ -30,7 +26,6 @@ postProjectBtn.addEventListener('click', () => {
 
 projectForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    // Collect form data
     const formData = new FormData(projectForm);
     const selectedDisciplines = [];
     formData.getAll('disciplines').forEach(discipline => selectedDisciplines.push(discipline));
@@ -40,11 +35,9 @@ projectForm.addEventListener('submit', (e) => {
         return;
     }
 
-    // Start AI Matchmaking
     startMatchmaking(selectedDisciplines);
 });
 
-// Logout Functionality
 logoutBtn.addEventListener('click', () => {
     logoutModal.classList.remove('hidden');
 });
@@ -53,20 +46,17 @@ modalOkBtns.forEach(btn => {
     btn.addEventListener('click', () => {
         logoutModal.classList.add('hidden');
         successModal.classList.add('hidden');
-        // Clear stored user data
         localStorage.removeItem('username');
         localStorage.removeItem('role');
         window.location.href = 'index.html';
     });
 });
 
-// Character Counter
 projectDescription.addEventListener('input', () => {
     const currentLength = projectDescription.value.length;
     charCounter.textContent = `${currentLength}/1000`;
 });
 
-// File Upload Drag & Drop
 fileUpload.addEventListener('dragover', (e) => {
     e.preventDefault();
     fileUpload.classList.add('dragover');
@@ -88,31 +78,23 @@ fileInput.addEventListener('change', () => {
     handleFiles(files);
 });
 
-// Handle Files Function
 function handleFiles(files) {
-    // For demonstration, we'll just log the files. Implement as needed.
     console.log('Files uploaded:', files);
 }
 
-// Start AI Matchmaking Function
 function startMatchmaking(selectedDisciplines) {
-    // Show matchmaking section
     matchmakingSection.classList.remove('hidden');
-    // Hide project form section
     projectFormSection.classList.add('hidden');
 
-    // Reset progress
     progressBar.style.width = '0%';
     progressText.textContent = 'Matching 0%';
 
-    // Simulate AI matchmaking with progress updates
     let progress = 0;
     const matchInterval = setInterval(() => {
-        progress += Math.floor(Math.random() * 10) + 5; // Increment by 5-14%
+        progress += Math.floor(Math.random() * 10) + 5; 
         if (progress >= 100) {
             progress = 100;
             clearInterval(matchInterval);
-            // Simulate a short delay before showing results
             setTimeout(() => {
                 matchmakingSection.classList.add('hidden');
                 displayEngineerProfiles(selectedDisciplines);
@@ -120,12 +102,10 @@ function startMatchmaking(selectedDisciplines) {
         }
         progressBar.style.width = `${progress}%`;
         progressText.textContent = `Matching ${progress}%`;
-    }, 800); // Update every 0.8 seconds
+    }, 800);
 }
 
-// Display Engineer Profiles Function
 function displayEngineerProfiles(selectedDisciplines) {
-    // Sample Engineers Data
     const engineers = [
         {
             name: 'Rajesh Verma',
@@ -351,10 +331,8 @@ function displayEngineerProfiles(selectedDisciplines) {
             bio: 'Experienced in big data technologies and data pipeline development.',
             profilePicture: 'https://t3.ftcdn.net/jpg/06/36/69/86/360_F_636698674_DroChEj5eWmZiaZOSDMnj8hcDqqw74Fp.jpg'
         }
-        // Add more engineers as needed
     ];
 
-    // Filter engineers based on selected disciplines
     const matchedEngineers = [];
 
     selectedDisciplines.forEach(discipline => {
@@ -365,13 +343,8 @@ function displayEngineerProfiles(selectedDisciplines) {
         }
     });
 
-    // Remove duplicate engineers if any
     const uniqueEngineers = [...new Map(matchedEngineers.map(item => [item['name'], item])).values()];
-
-    // Clear existing profiles
     engineerProfiles.innerHTML = '';
-
-    // Populate engineer profiles
     uniqueEngineers.forEach(engineer => {
         const profile = document.createElement('div');
         profile.classList.add('engineer-profile');
@@ -385,14 +358,10 @@ function displayEngineerProfiles(selectedDisciplines) {
         `;
         engineerProfiles.appendChild(profile);
     });
-
-    // Show results section
     resultsSection.classList.remove('hidden');
-    // Scroll to results
     resultsSection.scrollIntoView({ behavior: 'smooth' });
 }
 
-// Generate Star Ratings Function
 function generateStars(rating) {
     const fullStars = Math.floor(rating);
     const halfStar = rating % 1 >= 0.5;
@@ -409,12 +378,9 @@ function generateStars(rating) {
     return stars;
 }
 
-// Proceed with Team Button Functionality
 proceedTeamBtn.addEventListener('click', () => {
-    // Show success modal
     successModal.classList.remove('hidden');
 
-    // Close success modal and redirect to home page after clicking OK
     const okButton = successModal.querySelector('.modal-ok-btn');
     okButton.addEventListener('click', () => {
         successModal.classList.add('hidden');
