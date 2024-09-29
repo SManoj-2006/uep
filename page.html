@@ -4,15 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Client-Engineer Matchmaking Dashboard</title>
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;500&family=Poppins:wght@400;500&family=Pacifico&display=swap" rel="stylesheet">
-    <!-- Font Awesome for Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="page.css">
 </head>
 <body>
-    <!-- Header -->
     <header class="header">
         <div class="logo">
             <img src="https://i.ibb.co/JrHmQpr/uni-high-resolution-logo-transparent.png" alt="UNI Logo" id="uni-logo">
@@ -26,7 +22,6 @@
         </nav>
     </header>
 
-    <!-- Logout Modal -->
     <div class="modal hidden" id="logout-modal">
         <div class="modal-content">
             <p>You have successfully logged out.</p>
@@ -34,7 +29,6 @@
         </div>
     </div>
 
-    <!-- Success Popup Modal -->
     <div class="modal hidden" id="success-modal">
         <div class="modal-content">
             <i class="fas fa-check-circle fa-3x" style="color: #28a745; margin-bottom: 15px;"></i>
@@ -43,15 +37,12 @@
         </div>
     </div>
 
-    <!-- Main Body -->
     <main class="main-content">
-        <!-- Welcome Message -->
         <section class="welcome-section">
             <h1>Welcome, <span id="username-display">User</span>! Let's begin your project.</h1>
             <button class="post-project-btn">Post a New Project</button>
         </section>
 
-        <!-- Post a Project Form -->
         <section class="project-form-section hidden" id="project-form-section">
             <h2>Post a New Project</h2>
             <form id="project-form">
@@ -109,10 +100,8 @@
             </form>
         </section>
 
-        <!-- AI Matchmaking Simulation -->
         <section class="matchmaking-section hidden" id="matchmaking-section">
             <div class="loading-container">
-                <!-- Robot Animation Image -->
                 <div class="robot-animation-container">
                     <img src="https://i.pinimg.com/originals/a7/b0/15/a7b015d343ad801ad6da8c242dc6ae06.gif" alt="AI Robot" class="robot-animation">
                 </div>
@@ -126,22 +115,17 @@
             <div class="progress-text" id="progress-text">Matching 0%</div>
         </section>
 
-        <!-- Engineer Matching Results -->
         <section class="results-section hidden" id="results-section">
             <h2>Matched Engineers</h2>
             <div class="engineer-profiles" id="engineer-profiles">
-                <!-- Engineer profiles will be dynamically inserted here -->
             </div>
             <button class="proceed-team-btn">Proceed with this Team</button>
         </section>
     </main>
 
-    <!-- jQuery is already included in login.html, ensure it's included here as well if needed -->
-    <!-- If using separate JS files, ensure to include all dependencies -->
 
     <script src="page.js"></script>
     <script>
-        // Display the username from localStorage
         document.addEventListener('DOMContentLoaded', () => {
             const username = localStorage.getItem('username') || 'User';
             document.getElementById('username-display').textContent = username;
