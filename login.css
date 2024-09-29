@@ -1,35 +1,31 @@
-/* Made with love by Mutiullah Samim*/
-
 @import url('https://fonts.googleapis.com/css?family=Numans');
 
-/* Reset and Base Styles */
 html, body {
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    width: 100%; /* Ensure full width */
-    height: 100%; /* Ensure full height */
-    display: flex; /* Use flexbox to center content */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    margin: 0; 
+    padding: 0;
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url('https://i.ibb.co/VwBC3yq/eng-1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Numans', sans-serif;
-    animation: fadeInBackground 2s ease-out forwards; /* Animation for background */
+    animation: fadeInBackground 2s ease-out forwards; 
 }
 
 @keyframes fadeInBackground {
     0% { background-color: rgba(0, 0, 0, 0); }
-    100% { background-color: rgba(0, 0, 0, 0.5); } /* Adjust background color transition */
+    100% { background-color: rgba(0, 0, 0, 0.5); }
 }
 
-/* Blur Effect with Transition */
+
 .blur {
     filter: blur(5px);
     transition: filter 0.3s ease-in-out;
 }
 
-/* Font animation */
 @keyframes fadeInText {
     from { opacity: 0; transform: translateY(-20px); }
     to { opacity: 1; transform: translateY(0); }
@@ -39,19 +35,19 @@ h1, h2, h3, h4, h5, h6, p, a {
     animation: fadeInText 1.5s ease-out;
 }
 
-/* Card Styles */
+
 .card {
-    width: 480px; /* Set width */
-    height: auto; /* Adjust height to content */
+    width: 480px;
+    height: auto;
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Enhanced shadow for 3D effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
     overflow: hidden;
     animation: fadeIn 0.5s ease-out forwards;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content vertically inside the card */
-    align-items: center; /* Center content horizontally inside the card */
+    justify-content: center;
+    align-items: center; 
     position: relative;
 }
 
@@ -92,8 +88,8 @@ h1, h2, h3, h4, h5, h6, p, a {
 .input-group-prepend.focused .input-group-text,
 .input-group-text.hovered,
 .social_icon span.hovered {
-    background-color: #fff; /* Change as needed */
-    color: #333; /* Change as needed */
+    background-color: #fff; 
+    color: #333;
 }
 
 .form-control {
@@ -133,11 +129,11 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .card-footer {
-    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    background-color: rgba(255, 255, 255, 0.1);
     color: white;
     text-align: center;
     padding: 20px;
-    border-top: none; /* Remove border if any */
+    border-top: none;
     transition: background-color 0.3s ease;
 }
 
@@ -152,13 +148,13 @@ h1, h2, h3, h4, h5, h6, p, a {
     text-decoration: underline;
 }
 
-/* Updated to remove black background color */
+
 .card-footer {
-    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .card-footer .links {
-    color: white; /* Ensure text is visible */
+    color: white;
 }
 
 .card-footer .d-flex a {
@@ -170,22 +166,20 @@ h1, h2, h3, h4, h5, h6, p, a {
     text-decoration: underline;
 }
 
-/* Fade in animation for card */
 @keyframes fadeIn {
     from { opacity: 0; transform: scale(0.9); }
     to { opacity: 1; transform: scale(1); }
 }
 
-/* Modal Custom Styles */
 .modal-content {
-    background: linear-gradient(135deg, #1f4037, #99f2c8); /* Gradient background */
+    background: linear-gradient(135deg, #1f4037, #99f2c8);
     color: white;
     padding: 30px;
     border-radius: 15px;
     animation: fadeInModal 0.5s ease-out forwards;
     font-family: 'Numans', sans-serif;
-    box-shadow: 0 10px 30px rgba(0,0,0,.5); /* Enhanced shadow for 3D effect */
-    border: 2px solid #FFC312; /* Border for emphasis */
+    box-shadow: 0 10px 30px rgba(0,0,0,.5);
+    border: 2px solid #FFC312;
 }
 
 @keyframes fadeInModal {
@@ -212,7 +206,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     border: none;
     border-radius: 10px;
     position: relative;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Added shadow for 3D effect */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3); 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -221,7 +215,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .modal-body button i {
-    margin-right: 8px; /* Space between icon and text */
+    margin-right: 8px; 
     font-size: 18px;
 }
 
@@ -233,7 +227,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .modal-body button:nth-child(2) {
-    background-color: #12CBC4; /* Different color for Engineer */
+    background-color: #12CBC4; 
     color: #fff;
 }
 
@@ -242,7 +236,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     color: #333;
 }
 
-/* Pulsing Effect */
+
 @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.05); }
@@ -253,12 +247,10 @@ h1, h2, h3, h4, h5, h6, p, a {
     animation: pulse 0.6s ease;
 }
 
-/* Login Button Pulsing on Click */
 .login_btn:active {
     animation: pulse 0.6s ease;
 }
 
-/* Responsive Design */
 @media (max-width: 576px) {
     .card {
         width: 90%;
@@ -271,20 +263,15 @@ h1, h2, h3, h4, h5, h6, p, a {
     }
 }
 
-/* Focus States for Accessibility */
 .btn:focus, .close:focus, a:focus {
     outline: 2px solid #FFC312;
     outline-offset: 2px;
 }
 
-/* Ensure links are focusable and have visible focus indicators */
 a:focus {
     text-decoration: underline;
 }
 
-/* Removing Black Background from Specific Elements */
-
-/* Example: If there are unintended black backgrounds */
 .some-element-class {
     background-color: transparent !important;
 }
