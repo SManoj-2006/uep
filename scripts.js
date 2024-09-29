@@ -1,10 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Dark mode toggle functionality
     const darkModeToggle = document.getElementById('dark-mode-toggle');
     darkModeToggle.addEventListener('click', () => {
         document.body.classList.toggle('dark-mode');
         
-        // Toggle icon between moon and sun
         const icon = darkModeToggle.querySelector('i');
         if (document.body.classList.contains('dark-mode')) {
             icon.classList.remove('fa-moon');
@@ -15,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Smooth scrolling for internal links
     const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
     navLinks.forEach(link => {
         link.addEventListener('click', (event) => {
@@ -23,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const targetId = link.getAttribute('href').substring(1);
             const targetElement = document.getElementById(targetId);
             if (targetElement) {
-                const headerOffset = 80; // Adjust based on header height
+                const headerOffset = 80; 
                 const elementPosition = targetElement.getBoundingClientRect().top;
                 const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
@@ -35,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Redirect Get Started button to signup.html
     const getStartedBtn = document.getElementById('get-started-btn');
     if (getStartedBtn) {
         getStartedBtn.addEventListener('click', () => {
@@ -43,7 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Redirect Join UniEngineer Today button to login.html
     const joinBtn = document.getElementById('join-btn');
     if (joinBtn) {
         joinBtn.addEventListener('click', () => {
@@ -51,7 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Image carousel for hero background
     const heroBackgroundImages = document.querySelectorAll('.hero-background img');
     let currentImageIndex = 0;
 
@@ -63,7 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setInterval(rotateHeroImages, 5000);
 
-    // Fade-in on scroll with debounce for performance
     const fadeInElements = document.querySelectorAll('.fade-in');
 
     function debounce(func, wait = 20, immediate = true) {
@@ -91,9 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     window.addEventListener('scroll', debounce(handleScroll));
-    handleScroll(); // Trigger the function on page load
-
-    // Accordion functionality with ARIA attributes
+    handleScroll(); 
     const accordionHeaders = document.querySelectorAll('.accordion-header');
 
     accordionHeaders.forEach(header => {
@@ -101,14 +92,12 @@ document.addEventListener('DOMContentLoaded', () => {
             const parent = header.parentElement;
             const isActive = parent.classList.contains('active');
             
-            // Close all accordions
             document.querySelectorAll('.accordion-item').forEach(item => {
                 item.classList.remove('active');
                 item.querySelector('.accordion-header').setAttribute('aria-expanded', 'false');
                 item.querySelector('.accordion-content').setAttribute('aria-hidden', 'true');
             });
 
-            // Toggle current accordion
             if (!isActive) {
                 parent.classList.add('active');
                 header.setAttribute('aria-expanded', 'true');
@@ -116,7 +105,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Enable keyboard accessibility
         header.addEventListener('keypress', (e) => {
             if (e.key === 'Enter' || e.key === ' ') {
                 header.click();
@@ -124,23 +112,18 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Intro animation handling
     const introAnimation = document.querySelector('.intro-animation');
     const introLogo = document.querySelector('.intro-logo');
     const pageContent = document.querySelector('.page-content');
 
-    // Add blur effect to main content
     if (pageContent) {
         pageContent.classList.add('blur');
     }
 
-    // Listen for the end of the intro-logo animation
     if (introLogo) {
         introLogo.addEventListener('animationend', () => {
-            // Start fade-out animation
             introAnimation.classList.add('fade-out');
             
-            // Remove blur effect after fade-out transition
             introAnimation.addEventListener('transitionend', () => {
                 introAnimation.style.display = 'none';
                 if (pageContent) {
@@ -150,7 +133,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // In case the animationend event doesn't fire, use a timeout as a fallback
     setTimeout(() => {
         if (introAnimation && introAnimation.classList.contains('active')) {
             introAnimation.classList.add('fade-out');
@@ -161,9 +143,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         }
-    }, 3000); // Duration should match the CSS animation duration
+    }, 3000); 
 
-    // Back to top button functionality
+
     const backToTopButton = document.getElementById('back-to-top');
 
     if (backToTopButton) {
@@ -183,22 +165,18 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Smooth Scroll for "Get Started" Button
     const getStartedBtnSmooth = document.querySelector('.get-started-btn');
     const targetSection = document.querySelector('#join-uniengineer');
 
     if (getStartedBtnSmooth && targetSection) {
         getStartedBtnSmooth.addEventListener('click', (e) => {
-            e.preventDefault(); // Prevent default anchor behavior
-
-            // Get the target position
+            e.preventDefault();
             const targetPosition = targetSection.getBoundingClientRect().top + window.pageYOffset;
             const startPosition = window.pageYOffset;
             const distance = targetPosition - startPosition;
-            const duration = 800; // Duration in milliseconds
+            const duration = 800;
             let start = null;
 
-            // Easing function for smoothness
             function ease(t, b, c, d) {
                 t /= d / 2;
                 if (t < 1) return c / 2 * t * t + b;
@@ -206,7 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 return -c / 2 * (t * (t - 2) - 1) + b;
             }
 
-            // Animation function
+           
             function animation(currentTime) {
                 if (start === null) start = currentTime;
                 const timeElapsed = currentTime - start;
