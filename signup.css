@@ -1,11 +1,10 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styling */
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f4f4f9;
@@ -16,7 +15,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Navigation Bar */
+
 nav {
     background-color: #2C3E50;
     display: flex;
@@ -72,16 +71,14 @@ nav .nav-logo img {
     color: #3498db;
 }
 
-/* Burger Menu Styles */
 .burger {
-    display: none; /* Hidden by default */
+    display: none; 
     font-size: 30px;
     cursor: pointer;
     color: #ecf0f1;
     padding: 10px;
 }
 
-/* Introduction Section */
 .introduction {
     text-align: center;
     padding: 100px 20px;
@@ -109,7 +106,6 @@ nav .nav-logo img {
     animation: fadeInUp 1.5s ease;
 }
 
-/* Get Started Boxes */
 .intro-boxes {
     display: flex;
     justify-content: space-around;
@@ -166,7 +162,6 @@ input[type="submit"]:hover {
     transform: translateY(-3px);
 }
 
-/* Animations */
 @keyframes fadeInDown {
     from {
         opacity: 0;
@@ -189,9 +184,6 @@ input[type="submit"]:hover {
     }
 }
 
-/* Responsive Design */
-
-/* Tablets (max-width: 1024px) */
 @media (max-width: 1024px) {
     nav ul li {
         margin-left: 15px;
@@ -210,16 +202,15 @@ input[type="submit"]:hover {
     }
 }
 
-/* Mobile Devices (max-width: 768px) */
 @media (max-width: 768px) {
     .burger {
-        display: block; /* Show burger menu */
+        display: block;
     }
 
     .nav-opt ul {
         position: absolute;
         top: 80px;
-        left: -100%; /* Hidden off-screen */
+        left: -100%; 
         background: #2C3E50;
         width: 100%;
         flex-direction: column;
@@ -228,7 +219,7 @@ input[type="submit"]:hover {
     }
 
     .nav-opt ul.active {
-        left: 0; /* Show on click */
+        left: 0;
     }
 
     nav ul li {
@@ -248,7 +239,6 @@ input[type="submit"]:hover {
     }
 }
 
-/* Small Mobile Devices (max-width: 576px) */
 @media (max-width: 576px) {
     nav ul li {
         margin-left: 5px;
